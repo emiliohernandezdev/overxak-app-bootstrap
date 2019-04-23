@@ -1,0 +1,112 @@
+<form>
+    <div class="form-group">
+      <label for="name1">Primer nombre</label>
+      <input type="text" class="form-control" id="name1" aria-describedby="emailHelp" placeholder="Primer nombre">
+    </div>
+    <div class="form-group">
+        <label for="name2">Segundo nombre</label>
+        <input type="text" class="form-control" id="name2" aria-describedby="emailHelp" placeholder="Segundo nombre">
+      </div>
+      <div class="form-group">
+          <label for="surname1">Primer apellido</label>
+          <input type="text" class="form-control" id="surname1" aria-describedby="emailHelp" placeholder="Primer apellido">
+        </div>
+        <div class="form-group">
+            <label for="surname2">Segundo apellido</label>
+            <input type="text" class="form-control" id="surname2" aria-describedby="emailHelp" placeholder="Segundo apellido">
+        </div>
+        <div class="form-group">
+            <label for="born">Fecha de nacimiento</label>
+            <input type="date" class="form-control" id="born" aria-describedby="emailHelp" placeholder="Fecha de nacimiento">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Religión</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>Católico</option>
+              <option>Evangélico</option>
+              <option>Ateo</option>
+              <option>Mormón</option>
+              <option>Satánico</option>
+              <option>Otro</option>
+            </select>
+          </div>
+        <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" class="form-control" id="reli" aria-describedby="emailHelp" placeholder="Correo electrónico">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect3">Género</label>
+            <select class="form-control" id="exampleFormControlSelect3">
+              <option>Femenino</option>
+              <option>Masculino</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+              Datos de la dirección
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Complete la información:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="form-group">
+                          <label for="inputAddress">Dirección</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">Address 2</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                            <div class="form-group">
+                                <label for="department">Departamento</label>
+                                <select class="form-control" id="department">
+                                  <option *ngFor="let department of departments">{{department}}</option>
+                                </select>
+                              </div>
+                          <div class="form-group">
+                              <label for="muni">Municipio</label>
+                              <input type="text" class="form-control" id="muni" aria-describedby="emailHelp" placeholder="Municipio">
+                          </div>
+                        <div class="form-group">
+                            <label for="zone">Zona</label>
+                            <input type="number" class="form-control" id="zone" placeholder="Zona">
+                          </div>
+                          <div class="form-group">
+                              <label for="col">Colonia</label>
+                              <input type="text" class="form-control" id="col" aria-describedby="emailHelp" placeholder="Colonia">
+                          </div>
+                          <div class="form-group">
+                              <label for="av">Avenida</label>
+                              <input type="text" class="form-control" id="av" aria-describedby="emailHelp" placeholder="Avenida">
+                          </div>
+                          <div class="form-group">
+                              <label for="cll">Calle</label>
+                              <input type="text" class="form-control" id="cll" aria-describedby="emailHelp" placeholder="Calle">
+                          </div>
+                          <div class="form-group">
+                              <label for="mz">Manzana</label>
+                              <input type="text" class="form-control" id="mz" aria-describedby="emailHelp" placeholder="Manzana">
+                          </div>
+                          <div class="form-group">
+                              <label for="nc">No. casa</label>
+                              <input type="text" class="form-control" id="nc" aria-describedby="emailHelp" placeholder="# de casa">
+                          </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

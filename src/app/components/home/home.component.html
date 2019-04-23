@@ -1,0 +1,19 @@
+
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Primer Nombre</th>
+        <th scope="col">Segundo Nombre</th>
+        <th scope="col">Correo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td *ngFor="let person of personas" (click)="test(person)">{{person.primer_nombre}}</td>
+        <td *ngFor="let person of personas">{{person.segundo_nombre}}</td>
+        <td *ngFor="let person of personas">{{person.correo}}</td>
+      </tr>
+    </tbody>
+  </table>
